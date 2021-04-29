@@ -88,40 +88,40 @@ let heroIdleRightImg = img`
     . . . . f f f . . f f f . . . . 
     `
 let heroJumpLeftImgs = [img`
-    . . . . . . . . . . . . . . . . 
-    . . . f f f f f f f f f f . . . 
-    . . f e e e e e e e e e e f . . 
-    . f e e e e e e e e e e e e f . 
-    . f d d d d d d d d d e e d f . 
-    . f d d f d d d d f d d e d f . 
-    . f d d f d d d d f d d d e f . 
-    . f d d f d d d d f d d d f . . 
-    . f d d d d d d d d d d d f . . 
-    . f a c c c c c c c c a b f . . 
-    . f d d c c c c c c d d d f . . 
-    . f d f f f b b f f f d d f . . 
-    . . f a a a a a a a a a b f . . 
-    . . . f a a b f f a a b f . . . 
-    . . . f a a b f f a a b f . . . 
-    . . . . f f f . . f f f . . . . 
-    `, img`
-    . . . . . . . . . . . . . . . . 
-    . . . f f f f f f f f f f . . . 
-    . . f e e e e e e e e e e f . . 
-    . f e e e e e e e e e e e e f . 
-    . f d d d d d d d d d e e d f . 
-    . f d d f d d d d f d d e d f . 
-    . f d d f d d d d f d d d e f . 
-    . f d d f d d d d f d d d f . . 
-    . f d d d d d d d d d d d f . . 
-    . f a c c c c c c c c a b f . . 
-    . f d d c c c c c c d d d f . . 
-    . f d f f f b b f f f d d f . . 
-    . . f a a a a a a a a a b f . . 
-    . . . f a a b f f a a b f . . . 
-    . . . . f f f . . f f f . . . . 
-    . . . . . . . . . . . . . . . . 
-    `]
+    . . . . . . . . . . . . . . . .
+    . . . f f f f f f f f f f . . .
+    . . f e e e e e e e e e e f . .
+    . f e e e e e e e e e e e e f .
+    . f d d d d d d d d d e e d f .
+    . f d d f d d d d f d d e d f .
+    . f d d f d d d d f d d d e f .
+    . f d d f d d d d f d d d f . .
+    . f d d d d d d d d d d d f . .
+    . f a c c c c c c c c a b f . .
+    . f d d c c c c c c d d d f . .
+    . f d f f f b b f f f d d f . .
+    . . f a a a a a a a a a b f . .
+    . . . f a a b f f a a b f . . .
+    . . . f a a b f f a a b f . . .
+    . . . . f f f . . f f f . . . .
+`, img`
+    . . . . . . . . . . . . . . . .
+    . . . f f f f f f f f f f . . .
+    . . f e e e e e e e e e e f . .
+    . f e e e e e e e e e e e e f .
+    . f d d d d d d d d d e e d f .
+    . f d d f d d d d f d d e d f .
+    . f d d f d d d d f d d d e f .
+    . f d d f d d d d f d d d f . .
+    . f d d d d d d d d d d d f . .
+    . f a c c c c c c c c a b f . .
+    . f d d c c c c c c d d d f . .
+    . f d f f f b b f f f d d f . .
+    . . f a a a a a a a a a b f . .
+    . . . f a a b f f a a b f . . .
+    . . . . f f f . . f f f . . . .
+    . . . . . . . . . . . . . . . .
+`]
 let heroJumpRightImgs = [img`
     . . . . . . . . . . . . . . . . 
     . . . f f f f f f f f f f . . . 
@@ -337,76 +337,76 @@ let flierImgs = [img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `]
-let heroRunRightImgs = [img`
-    . . . . . . . . . . . . . . . . 
-    . . . f f f f f f f . . . . . . 
-    . . f e e e e e e e f . . . . . 
-    . f e e e e e e e e e f . . . . 
-    . f d d d d e d d e e f . . . . 
-    . f d d f d d e d e e f . . . . 
-    . f d d f d d d e e e f . . . . 
-    . f d d f d d d d d d f . . . . 
-    . f d d d d d d d d d f . . . . 
-    . . f c c c a a c c b f . . . . 
-    . . f c c d d d c c b f . . . . 
-    . . f b f f d d f f f f . . . . 
-    . . f a a a a a a a b f . . . . 
-    . . . f a a a a b f f . . . . . 
-    . . . f a a a a b f . . . . . . 
-    . . . . f f f f f . . . . . . . 
-    `, img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . f f f f f f f . . . . . . 
-    . . f e e e e e e e f . . . . . 
-    . f e e e e e e e e e f . . . . 
-    . f d d d d e d d e e f . . . . 
-    . f d d f d d e d e e f . . . . 
-    . f d d f d d d e e e f . . . . 
-    . f d d f d d d d d d f . . . . 
-    . f d d d d d d d d d f . . . . 
-    . . f c c c c a a c b f . . . . 
-    . . f c c c c d d c b f . . . . 
-    . . f b f f d d d f f f f . . . 
-    . . f a a a a a a a a b f f . . 
-    . . . f a a b f f a a a f f . . 
-    . . . . f f f . f f f f f . . . 
-    `, img`
-    . . . . . . . . . . . . . . . . 
-    . . . f f f f f f f . . . . . . 
-    . . f e e e e e e e f . . . . . 
-    . f e e e e e e e e e f . . . . 
-    . f d d d d e d d e e f . . . . 
-    . f d d f d d e d e e f . . . . 
-    . f d d f d d d e e e f . . . . 
-    . f d d f d d d d d d f . . . . 
-    . f d d d d d d d d d f . . . . 
-    . . f c c c a a c c b f . . . . 
-    . . f c c d d d c c b f . . . . 
-    . . f b f f d d f f f f . . . . 
-    . . f a a a a a a a b f . . . . 
-    . . . f a a a a b f f . . . . . 
-    . . . f a a a a b f . . . . . . 
-    . . . . f f f f f . . . . . . . 
-    `, img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . f f f f f f f . . . . . . 
-    . . f e e e e e e e f . . . . . 
-    . f e e e e e e e e e f . . . . 
-    . f d d d d e d d e e f . . . . 
-    . f d d f d d e d e e f . . . . 
-    . f d d f d d d e e e f . . . . 
-    . f d d f d d d d d d f . . . . 
-    . f d d d d d d d d d f . . . . 
-    . . f c a a c c c c b f . . . . 
-    . f d d d b c c c c b f . . . . 
-    f f f d d f f f f f f f . . . . 
-    f f f a a a a a a a b f . . . . 
-    . f a a b f a a b f f . . . . . 
-    . f f f f . f f f . . . . . . . 
-    `]
 let heroRunLeftImgs = [img`
+    . . . . . . . . . . . . . . . .
+    . . . f f f f f f f . . . . . .
+    . . f e e e e e e e f . . . . .
+    . f e e e e e e e e e f . . . .
+    . f d d d d e d d e e f . . . .
+    . f d d f d d e d e e f . . . .
+    . f d d f d d d e e e f . . . .
+    . f d d f d d d d d d f . . . .
+    . f d d d d d d d d d f . . . .
+    . . f c c c a a c c b f . . . .
+    . . f c c d d d c c b f . . . .
+    . . f b f f d d f f f f . . . .
+    . . f a a a a a a a b f . . . .
+    . . . f a a a a b f f . . . . .
+    . . . f a a a a b f . . . . . .
+    . . . . f f f f f . . . . . . .
+`, img`
+    . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . .
+    . . . f f f f f f f . . . . . .
+    . . f e e e e e e e f . . . . .
+    . f e e e e e e e e e f . . . .
+    . f d d d d e d d e e f . . . .
+    . f d d f d d e d e e f . . . .
+    . f d d f d d d e e e f . . . .
+    . f d d f d d d d d d f . . . .
+    . f d d d d d d d d d f . . . .
+    . . f c c c c a a c b f . . . .
+    . . f c c c c d d c b f . . . .
+    . . f b f f d d d f f f f . . .
+    . . f a a a a a a a a b f f . .
+    . . . f a a b f f a a a f f . .
+    . . . . f f f . f f f f f . . .
+`, img`
+    . . . . . . . . . . . . . . . . 
+    . . . f f f f f f f . . . . . . 
+    . . f e e e e e e e f . . . . . 
+    . f e e e e e e e e e f . . . . 
+    . f d d d d e d d e e f . . . . 
+    . f d d f d d e d e e f . . . . 
+    . f d d f d d d e e e f . . . . 
+    . f d d f d d d d d d f . . . . 
+    . f d d d d d d d d d f . . . . 
+    . . f c c c a a c c b f . . . . 
+    . . f c c d d d c c b f . . . . 
+    . . f b f f d d f f f f . . . . 
+    . . f a a a a a a a b f . . . . 
+    . . . f a a a a b f f . . . . . 
+    . . . f a a a a b f . . . . . . 
+    . . . . f f f f f . . . . . . . 
+    `, img`
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . f f f f f f f . . . . . .
+        . . f e e e e e e e f . . . . .
+        . f e e e e e e e e e f . . . .
+        . f d d d d e d d e e f . . . .
+        . f d d f d d e d e e f . . . .
+        . f d d f d d d e e e f . . . .
+        . f d d f d d d d d d f . . . .
+        . f d d d d d d d d d f . . . .
+        . . f c a a c c c c b f . . . .
+        . f d d d b c c c c b f . . . .
+        f f f d d f f f f f f f . . . .
+        f f f a a a a a a a b f . . . .
+        . f a a b f a a b f f . . . . .
+        . f f f f . f f f . . . . . . .
+    `]
+let heroRunRightImgs = [img`
     . . . . . . . . . . . . . . . . 
     . . . . . . f f f f f f f . . . 
     . . . . . f e e e e e e e f . . 
@@ -424,22 +424,22 @@ let heroRunLeftImgs = [img`
     . . . . . . f b a a a a f . . . 
     . . . . . . . f f f f f . . . . 
     `, img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . f f f f f f f . . . 
-    . . . . . f e e e e e e e f . . 
-    . . . . f e e e e e e e e e f . 
-    . . . . f e e d d e d d d d f . 
-    . . . . f e e d e d d f d d f . 
-    . . . . f e e e d d d f d d f . 
-    . . . . f d d d d d d f d d f . 
-    . . . . f d d d d d d d d d f . 
-    . . . . f b c a a c c c c f . . 
-    . . . . f b c d d c c c c f . . 
-    . . . f f f f d d d f f b f . . 
-    . . f f b a a a a a a a a f . . 
-    . . f f a a a f f b a a f . . . 
-    . . . f f f f . . f f f . . . . 
+        . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . .
+        . . . . . . f f f f f f f . . .
+        . . . . . f e e e e e e e f . .
+        . . . . f e e e e e e e e e f .
+        . . . . f e e d d e d d d d f .
+        . . . . f e e d e d d f d d f .
+        . . . . f e e e d d d f d d f .
+        . . . . f d d d d d d f d d f .
+        . . . . f d d d d d d d d d f .
+        . . . . f b c a a c c c c f . .
+        . . . . f b c d d c c c c f . .
+        . . . f f f f d d d f f b f . .
+        . . f f b a a a a a a a a f . .
+        . . f f a a a f f b a a f . . .
+        . . . f f f f . . f f f . . . .
     `, img`
     . . . . . . . . . . . . . . . . 
     . . . . . . f f f f f f f . . . 

@@ -132,3 +132,69 @@ function initializeFlierAnimations () {
  let flierIdle = animation.createAnimation(ActionKind.Idle, 100)
     flierIdle.addAnimationFrame(flierImgs[1])
 }
+game.onUpdate(function() {
+   // Check if facing left
+    if (hero.vx < 0){
+        heroFacingLeft = true
+    }
+    else if (hero.vx > 0){
+        heroFacingLeft = false
+    }
+    //Crouching
+    if (controller.down.isPressed()){
+        if (heroFacingLeft){
+            hero.setImage(heroCrouchImgsLeft)
+        }
+        else {
+            hero.setImage(heroCrouchImgsRight)
+        }
+    }
+    // In the air
+    else if (hero.vy < 20 && !(hero.isHittingTile(CollisionDirection.Bottom))){
+        if (heroFacingLeft){
+            animation.runImageAnimation(hero, heroJumpLeftImgs)
+        }
+        else {
+            animation.runImageAnimation(hero, heroJumpRightImgs)
+        }
+    }
+    // running animations
+    else if (hero.vx < 0){
+        animation.runImageAnimation(hero, heroRunLeftImgs, 5)
+    }
+    else if (hero.vx > 0){
+        animation.runImageAnimation(hero, heroRunRightImgs, 5)
+    }
+    else {
+        if (heroFacingLeft){
+            hero.setImage(heroIdleLeftImg)
+        }
+        else {
+            hero.setImage(heroIdleRightImg)
+        }
+    }
+})
+game.onUpdate(function() {
+    for (let flier of sprites.allOfKind(SpriteKind.Flier)){
+        if (Math.abs(flier.x - hero.x ) < 60) {
+        if (flier.x - hero.x < -5){
+            flier.vx = 25
+        }
+        else if (flier.x - hero.x < 5){
+            flier.vx = -25
+        }
+        if (flier.y - hero.y < -5){
+            flier.vy = 25
+        }
+        else if (flier.y - hero.y < 5){
+            flier.vy = -25
+        }
+        animation.runImageAnimation(flier, flierImgs, 100, true)
+        }
+        else {
+            flier.vy = -20
+            flier.vx = 0
+            animation.runImageAnimation(flier, [flierImgs[1]])
+        }
+    }
+})
